@@ -23,8 +23,10 @@
     <div id="app">
         <div class="text-center p-4">
             <h1>Vue Email List</h1>
-            <ul class="list-group">
-                <li class="list-group-item mx-auto mt-5">
+            <hr>
+            <ul>
+                <li v-for="email in emails" class="list-group-item text-light fs-1 mx-auto mt-5">
+                    {{ email }}
                 </li>
             </ul>
         </div>
